@@ -114,3 +114,25 @@ function whichDoorDoesHostFirstOpen () {
   
     console.log(revealedDoor);
   }
+
+
+const possibleStrategies = ["stick", "switch"];
+let chosenStrategy;
+
+function chooseStickStrategy(){
+  chosenStrategy = possibleStrategies[0];
+  console.log(chosenStrategy);
+  playTheGame() //the player choosing a strategy calls the function which will tell them if they won or lost
+}
+
+function chooseSwitchStrategy(){
+  chosenStrategy = possibleStrategies[1];
+  console.log(chosenStrategy);
+  playTheGame() //the player choosing a strategy calls the function which will tell them if they won or lost
+}
+
+const stickButton = document.getElementById("stickStrategyButton");
+const switchButton = document.getElementById("switchStrategyButton");
+
+stickButton.addEventListener("click", chooseStickStrategy);
+switchButton.addEventListener("click", chooseSwitchStrategy);
