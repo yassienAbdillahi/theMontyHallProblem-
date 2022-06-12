@@ -1,0 +1,26 @@
+.box1 {
+    min-width: 5rem;
+    background-color: red;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: red;
+    border-radius: 0.75rem;
+  }
+ 
+  .box2 {
+    min-width: 5rem;
+    background: green;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: green;
+    border-radius: 0.75rem;
+  }
+
+.box3 {
+    min-width: 5rem;
+    background: blue;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 0.75rem;
+  }
