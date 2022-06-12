@@ -76,25 +76,25 @@ function whichDoorDoesHostFirstOpen () {
       (doors.door1 == "ferrari") && (doorPlayerGuessed == "door1") && (b == 1)
     ) {
         revealedDoor = "door2";
-        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}`;
+        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}.`;
     }
     else if (
       (doors.door1 == "ferrari") && (doorPlayerGuessed == "door1") && (b == 2)
     ) {
         revealedDoor = "door3";
-        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}`;
+        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}.`;
     }
       else if (
         (doors.door1 == "ferrari") && (doorPlayerGuessed == "door2")
       ){
           revealedDoor = "door3";
-          revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}`;
+          revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}.`;
     }
     else if (
       (doors.door1 == "ferrari") && (doorPlayerGuessed == "door3")  
     ) {
         revealedDoor = "door2";
-        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}`;
+        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}.`;
     }    
   
     //the following 24 lines determine what happens if the prize is behind door2
@@ -102,25 +102,25 @@ function whichDoorDoesHostFirstOpen () {
       (doors.door2 == "ferrari") && (doorPlayerGuessed == "door2") && (b == 1)
     ) {
         revealedDoor = "door1";
-        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}`;
+        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}.`;
     }
     else if (
       (doors.door2 == "ferrari") && (doorPlayerGuessed == "door2") && (b == 2)
     ) {
         revealedDoor = "door3";
-        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}`;
+        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}.`;
     }
       else if (
         (doors.door2 == "ferrari") && (doorPlayerGuessed == "door1")
       ){
           revealedDoor = "door3";
-          revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}`;
+          revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}.`;
         }
     else if (
       (doors.door2 == "ferrari") &&  (doorPlayerGuessed == "door3")
     ) {
         revealedDoor = "door1";
-        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}`;
+        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}.`;
     }
   
     //the following 24 lines determine what happens if the prize is behind door3 
@@ -128,23 +128,23 @@ function whichDoorDoesHostFirstOpen () {
       (doors.door3 == "ferrari") &&  (doorPlayerGuessed == "door3") && (b == 1)
     ) {
         revealedDoor = "door1";
-        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}`;
+        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}.`;
     }
     else if (
       (doors.door3 == "ferrari") &&  (doorPlayerGuessed == "door3") && (b == 2)
     ) {
       revealedDoor = "door2";
-      revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}`;
+      revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}.`;
     }
     else if (
       (doors.door3 == "ferrari") && (doorPlayerGuessed == "door1")
     ) {
         revealedDoor = "door2";
-        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}`;
+        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}.`;
 }
     else {
         revealedDoor = "door1";
-        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}`;
+        revealedDoorinHTML.innerHTML = `You chose ${doorPlayerGuessed}. The host opens ${revealedDoor}. There is a goat behind ${revealedDoor}.`;
     }
   
     console.log(revealedDoor);
@@ -221,6 +221,6 @@ else if ( //i.e. if the player chose the correct door at the start but switched 
 }
 
 function displayStats() {
-    let statsText = `So far, you have played the game a total of ${totalNumberOfTimesGameHasBeenPlayed} times. ${totalNumberOfTimesGamesPlayedWithStickStrategy} of those times you used the stick strategy. Your total number of wins with the stick stratgey is ${totalNumberOfWinsWithStickStrategy}. ${totalNumberOfTimesGamesPlayedWithSwitchStrategy} of those times you used the switch strategy. Your total number of wins with the switch stratgey is ${totalNumberOfWinsWithSwitchStrategy}`;
+    let statsText = `So far, you have played the game a total of ${totalNumberOfTimesGameHasBeenPlayed} times.<br><br>${totalNumberOfTimesGamesPlayedWithStickStrategy} of those times you used the stick strategy. Your total number of wins with the stick stratgey is ${totalNumberOfWinsWithStickStrategy}.<br><br>${totalNumberOfTimesGamesPlayedWithSwitchStrategy} of those times you used the switch strategy. Your total number of wins with the switch stratgey is ${totalNumberOfWinsWithSwitchStrategy}.`;
     document.getElementById("stats").innerHTML = statsText;
   }
