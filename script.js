@@ -177,11 +177,11 @@ let totalNumberOfTimesGameHasBeenPlayed = 0;
 
 let totalNumberOfTimesGamesPlayedWithStickStrategy = 0;
 let totalNumberOfWinsWithStickStrategy = 0;
-
+let winPercentageWithStickStrategy;
 
 let totalNumberOfTimesGamesPlayedWithSwitchStrategy = 0;
 let totalNumberOfWinsWithSwitchStrategy = 0;
-
+let winPercentageWithSwitchStrategy;
 
 
 function playTheGame() {
@@ -191,7 +191,7 @@ function playTheGame() {
     totalNumberOfTimesGameHasBeenPlayed++;
     totalNumberOfTimesGamesPlayedWithStickStrategy++;
     totalNumberOfWinsWithStickStrategy++;
-    let winPercentageWithStickStrategy = (totalNumberOfWinsWithStickStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
+    winPercentageWithStickStrategy = (totalNumberOfWinsWithStickStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
     displayStats(); //the game being played automatically calls a function to show the player's cumulative stats
     alert("Congratulations you win a ferrari");
   }
@@ -200,7 +200,7 @@ function playTheGame() {
   ) {
     totalNumberOfTimesGameHasBeenPlayed++;
     totalNumberOfTimesGamesPlayedWithStickStrategy++;
-    let winPercentageWithStickStrategy = (totalNumberOfWinsWithStickStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
+    winPercentageWithStickStrategy = (totalNumberOfWinsWithStickStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
     displayStats(); //the game being played automatically calls a function to show the player's cumulative stats
     alert("Sorry, you lose. Here's a goat though");
   }
@@ -209,7 +209,7 @@ else if ( //i.e. if the player chose the correct door at the start but switched 
 ) {
     totalNumberOfTimesGameHasBeenPlayed++;
     totalNumberOfTimesGamesPlayedWithSwitchStrategy++;
-    let winPercentageWithSwitchStrategy = (totalNumberOfWinsWithSwitchStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
+    winPercentageWithSwitchStrategy = (totalNumberOfWinsWithSwitchStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
     displayStats(); //the game being played automatically calls a function to show the player's cumulative stats
     alert("Sorry, you lose. Here's a goat though");
 }
@@ -217,7 +217,7 @@ else if ( //i.e. if the player chose the correct door at the start but switched 
     totalNumberOfTimesGameHasBeenPlayed++;
     totalNumberOfTimesGamesPlayedWithSwitchStrategy++;
     totalNumberOfWinsWithSwitchStrategy++;
-    let winPercentageWithSwitchStrategy = (totalNumberOfWinsWithSwitchStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
+    winPercentageWithSwitchStrategy = (totalNumberOfWinsWithSwitchStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
     displayStats(); //the game being played automatically calls a function to show the player's cumulative stats
     alert("Congratulations you win a ferrari");
   }
