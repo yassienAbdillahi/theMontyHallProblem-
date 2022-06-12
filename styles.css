@@ -1,5 +1,5 @@
 .box1 {
-    min-width: 5rem;
+    
     background-color: red;
     border-width: 0.1rem;
     border-style: solid;
@@ -8,7 +8,7 @@
   }
  
   .box2 {
-    min-width: 5rem;
+    
     background: green;
     border-width: 0.1rem;
     border-style: solid;
@@ -17,7 +17,7 @@
   }
 
 .box3 {
-    min-width: 5rem;
+    
     background: blue;
     border-width: 0.1rem;
     border-style: solid;
@@ -26,6 +26,20 @@
   }
 
   .center {
-      max-width: 50vw;
+      max-width: 68vw;
       margin: 0 auto;
+  }
+
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
   }
