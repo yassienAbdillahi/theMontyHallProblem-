@@ -136,3 +136,51 @@ const switchButton = document.getElementById("switchStrategyButton");
 
 stickButton.addEventListener("click", chooseStickStrategy);
 switchButton.addEventListener("click", chooseSwitchStrategy);
+
+
+let totalNumberOfTimesGameHasBeenPlayed = 0;
+
+let totalNumberOfTimesGamesPlayedWithStickStrategy = 0;
+let totalNumberOfWinsWithStickStrategy = 0;
+let winPercentageWithStickStrategy = (totalNumberOfWinsWithStickStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
+
+let totalNumberOfTimesGamesPlayedWithSwitchStrategy = 0;
+let totalNumberOfWinsWithSwitchStrategy = 0;
+let winPercentageWithSwitchStrategy = (totalNumberOfWinsWithSwitchStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
+
+
+function playTheGame() {
+  if ( //i.e. if the player chose the correct door at the start and stuck with it
+    (chosenStrategy == "stick") && (doors[doorPlayerGuessed] == "ferrari")
+  ) {
+    totalNumberOfTimesGameHasBeenPlayed++;
+    totalNumberOfTimesGamesPlayedWithStickStrategy++;
+    totalNumberOfWinsWithStickStrategy++;
+    displayStats(); //the game being played automatically calls a function to show the player's cumulative stats
+    alert("Congratulations you win a ferrari");
+  }
+  else if ( //i.e. if the player chose the incorrect door at the start and stuck with it
+    (chosenStrategy == "stick") && (doors[doorPlayerGuessed] != "ferrari")
+  ) {
+    totalNumberOfTimesGameHasBeenPlayed++;
+    totalNumberOfTimesGamesPlayedWithStickStrategy++;
+    displayStats(); //the game being played automatically calls a function to show the player's cumulative stats
+    alert("Sorry, you lose. Here's a goat though");
+  }
+else if ( //i.e. if the player chose the correct door at the start but switched away from it
+  (chosenStrategy == "switch") && (doors[doorPlayerGuessed] == "ferrari")
+) {
+    totalNumberOfTimesGameHasBeenPlayed++;
+    totalNumberOfTimesGamesPlayedWithSwitchStrategy++;
+    displayStats(); //the game being played automatically calls a function to show the player's cumulative stats
+    alert("Sorry, you lose. Here's a goat though");
+}
+  else { //i.e. if the player chose the incorrect door at the start and switched away from it
+    totalNumberOfTimesGameHasBeenPlayed++;
+    totalNumberOfTimesGamesPlayedWithSwitchStrategy++;
+    totalNumberOfWinsWithSwitchStrategy++;
+    displayStats(); //the game being played automatically calls a function to show the player's cumulative stats
+    alert("Congratulations you win a ferrari");
+  }
+ 
+}
