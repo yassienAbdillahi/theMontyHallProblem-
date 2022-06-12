@@ -8,9 +8,9 @@ You will need to:
 
 - [x] Gain an understanding of the problem - perhaps see how your friends react if you play the part of the host.
 - [x] Convince yourself that Vos Savant was correct.
-- [ ] Design and write software that will run sample games employing either the stick or switch strategy.
-- [ ] Put the code in a public GitHub repository
-- [ ] Use your software to show that switching doors is statistically the best option.
+- [x] Design and write software that will run sample games employing either the stick or switch strategy.
+- [x] Put the code in a public GitHub repository
+- [x] Use your software to show that switching doors is statistically the best option.
 
 The elegance of the output is not important so long as the program can be used to prove the point.
 
@@ -19,9 +19,9 @@ The elegance of the output is not important so long as the program can be used t
 
 As the person playing the game (in this case the interviewer), I want to:
 
-- [ ] Be able to choose a door to start with
-- [ ] See what is behind one of the other two doors that I did not choose
-- [ ] Be able to choose to stick to my original door or switch to the one remaining unopened door that I did not initially choose
-- [ ] See whether I win the prize or not
-- [ ] Be able to play the game multuple times using a different strategy if I want
-- [ ] See a statistical record of my performance based on the strategies I chose
+- [x] Be able to choose a door to start with
+- [x] See what is behind one of the other two doors that I did not choose
+- [x] Be able to choose to stick to my original door or switch to the one remaining unopened door that I did not initially choose
+- [x] See whether I win the prize or not
+- [x] Be able to play the game multuple times using a different strategy if I want
+- [x] See a statistical record of my performance based on the strategies I chose
