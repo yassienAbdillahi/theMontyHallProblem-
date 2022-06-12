@@ -8,7 +8,7 @@
   }
  
   .box2 {
-    
+    color: white;
     background: green;
     border-width: 0.1rem;
     border-style: solid;
@@ -17,7 +17,7 @@
   }
 
 .box3 {
-    
+    color: white;
     background: blue;
     border-width: 0.1rem;
     border-style: solid;
