@@ -24,3 +24,8 @@
     border-color: blue;
     border-radius: 0.75rem;
   }
+
+  .center {
+      max-width: 50vw;
+      margin: 0 auto;
+  }
