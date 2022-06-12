@@ -177,11 +177,11 @@ let totalNumberOfTimesGameHasBeenPlayed = 0;
 
 let totalNumberOfTimesGamesPlayedWithStickStrategy = 0;
 let totalNumberOfWinsWithStickStrategy = 0;
-let winPercentageWithStickStrategy = (totalNumberOfWinsWithStickStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
+
 
 let totalNumberOfTimesGamesPlayedWithSwitchStrategy = 0;
 let totalNumberOfWinsWithSwitchStrategy = 0;
-let winPercentageWithSwitchStrategy = (totalNumberOfWinsWithSwitchStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
+
 
 
 function playTheGame() {
@@ -191,6 +191,7 @@ function playTheGame() {
     totalNumberOfTimesGameHasBeenPlayed++;
     totalNumberOfTimesGamesPlayedWithStickStrategy++;
     totalNumberOfWinsWithStickStrategy++;
+    let winPercentageWithStickStrategy = (totalNumberOfWinsWithStickStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
     displayStats(); //the game being played automatically calls a function to show the player's cumulative stats
     alert("Congratulations you win a ferrari");
   }
@@ -199,6 +200,7 @@ function playTheGame() {
   ) {
     totalNumberOfTimesGameHasBeenPlayed++;
     totalNumberOfTimesGamesPlayedWithStickStrategy++;
+    let winPercentageWithStickStrategy = (totalNumberOfWinsWithStickStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
     displayStats(); //the game being played automatically calls a function to show the player's cumulative stats
     alert("Sorry, you lose. Here's a goat though");
   }
@@ -207,6 +209,7 @@ else if ( //i.e. if the player chose the correct door at the start but switched 
 ) {
     totalNumberOfTimesGameHasBeenPlayed++;
     totalNumberOfTimesGamesPlayedWithSwitchStrategy++;
+    let winPercentageWithSwitchStrategy = (totalNumberOfWinsWithSwitchStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
     displayStats(); //the game being played automatically calls a function to show the player's cumulative stats
     alert("Sorry, you lose. Here's a goat though");
 }
@@ -214,6 +217,7 @@ else if ( //i.e. if the player chose the correct door at the start but switched 
     totalNumberOfTimesGameHasBeenPlayed++;
     totalNumberOfTimesGamesPlayedWithSwitchStrategy++;
     totalNumberOfWinsWithSwitchStrategy++;
+    let winPercentageWithSwitchStrategy = (totalNumberOfWinsWithSwitchStrategy/totalNumberOfTimesGameHasBeenPlayed) * 100;
     displayStats(); //the game being played automatically calls a function to show the player's cumulative stats
     alert("Congratulations you win a ferrari");
   }
@@ -221,9 +225,9 @@ else if ( //i.e. if the player chose the correct door at the start but switched 
 }
 
 function displayStats() {
-    let statsText = `So far, you have played the game a total of ${totalNumberOfTimesGameHasBeenPlayed} times.<br><br>${totalNumberOfTimesGamesPlayedWithStickStrategy} of those times you used the stick strategy. Your total number of wins with the stick stratgey is ${totalNumberOfWinsWithStickStrategy}.<br><br>${totalNumberOfTimesGamesPlayedWithSwitchStrategy} of those times you used the switch strategy. Your total number of wins with the switch stratgey is ${totalNumberOfWinsWithSwitchStrategy}.`;
+    let statsText = `So far, you have played the game a total of ${totalNumberOfTimesGameHasBeenPlayed} times.<br><br>${totalNumberOfTimesGamesPlayedWithStickStrategy} of those times you used the stick strategy. Your total number of wins with the stick stratgey is ${totalNumberOfWinsWithStickStrategy}. When playing the stick strategy your win percentage is ${winPercentageWithStickStrategy}%.<br><br>${totalNumberOfTimesGamesPlayedWithSwitchStrategy} of those times you used the switch strategy. Your total number of wins with the switch stratgey is ${totalNumberOfWinsWithSwitchStrategy}.When playing the switch strategy your win percentage is ${winPercentageWithSwitchStrategy}%.`;
     document.getElementById("stats").innerHTML = statsText;
-
-    console.log(winPercentageWithStickStrategy);
-    console.log(winPercentageWithSwitchStrategy);
   }
+
+  
+  
