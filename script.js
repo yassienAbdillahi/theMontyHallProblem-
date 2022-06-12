@@ -223,4 +223,7 @@ else if ( //i.e. if the player chose the correct door at the start but switched 
 function displayStats() {
     let statsText = `So far, you have played the game a total of ${totalNumberOfTimesGameHasBeenPlayed} times.<br><br>${totalNumberOfTimesGamesPlayedWithStickStrategy} of those times you used the stick strategy. Your total number of wins with the stick stratgey is ${totalNumberOfWinsWithStickStrategy}.<br><br>${totalNumberOfTimesGamesPlayedWithSwitchStrategy} of those times you used the switch strategy. Your total number of wins with the switch stratgey is ${totalNumberOfWinsWithSwitchStrategy}.`;
     document.getElementById("stats").innerHTML = statsText;
+
+    console.log(winPercentageWithStickStrategy);
+    console.log(winPercentageWithSwitchStrategy);
   }
