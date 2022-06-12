@@ -63,3 +63,54 @@ const door3Button = document.getElementById("door3Button");
 door1Button.addEventListener("click", playerChooseDoor1);
 door2Button.addEventListener("click", playerChooseDoor2);
 door3Button.addEventListener("click", playerChooseDoor3);
+
+
+function whichDoorDoesHostFirstOpen () {
+    let revealedDoor;
+    let b = Math.floor(Math.random() * 2 ) + 1; //this randomly assigns 1 or 2 to the variable b
+    console.log(b);
+   
+    //the following 12 lines determine what happens if the prize is behind door1
+    if (
+      (doors.door1 == "ferrari") && (doorPlayerGuessed == "door1") && (b == 1)
+    ) {revealedDoor = "door2";}
+    else if (
+      (doors.door1 == "ferrari") && (doorPlayerGuessed == "door1") && (b == 2)
+    ) {revealedDoor = "door3";}
+      else if (
+        (doors.door1 == "ferrari") && (doorPlayerGuessed == "door2")
+      ){revealedDoor = "door3";}
+    else if (
+      (doors.door1 == "ferrari") && (doorPlayerGuessed == "door3")  
+    ) {revealedDoor = "door2";}    
+  
+    //the following 12 lines determine what happens if the prize is behind door2
+    else if (
+      (doors.door2 == "ferrari") && (doorPlayerGuessed == "door2") && (b == 1)
+    ) {revealedDoor = "door1";}
+    else if (
+      (doors.door2 == "ferrari") && (doorPlayerGuessed == "door2") && (b == 2)
+    ) {revealedDoor = "door3";}
+      else if (
+        (doors.door2 == "ferrari") && (doorPlayerGuessed == "door1")
+      ){revealedDoor = "door3";}
+    else if (
+      (doors.door2 == "ferrari") &&  (doorPlayerGuessed == "door3")
+    ) {revealedDoor = "door1";}
+  
+    //the following 12 lines determine what happens if the prize is behind door3 
+    else if (
+      (doors.door3 == "ferrari") &&  (doorPlayerGuessed == "door3") && (b == 1)
+    ) {revealedDoor = "door1";}
+    else if (
+      (doors.door3 == "ferrari") &&  (doorPlayerGuessed == "door3") && (b == 2)
+    ) {
+      revealedDoor = "door2";
+    }
+    else if (
+      (doors.door3 == "ferrari") && (doorPlayerGuessed == "door1")
+    ) {revealedDoor = "door2";}
+    else {revealedDoor = "door1";}
+  
+    console.log(revealedDoor);
+  }
